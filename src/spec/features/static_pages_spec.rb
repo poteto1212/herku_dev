@@ -10,7 +10,7 @@ RSpec.feature "static_pages",type: :feature do
     specify '画面の表示' do
       
       visit '/static_pages/home'
-      expect(page).to have_css('h1', text: 'Sample App')
+      expect(page).to have_css('h1', text: 'Welcome to the Sample App')
       expect(page).to have_title "Home | #{@base_title}"
     end
   end
